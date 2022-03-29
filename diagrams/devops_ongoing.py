@@ -16,8 +16,7 @@ with Diagram(name="DevOps Ongoing Process", filename="devops_ongoing", show=Fals
   runner = Ubuntu("Runner")
 
   with Cluster("Docker"):
-    # runner >> ansible
-    portainer = Custom ("Portainer", "../local_resources/portainer.png")
+    portainer = Custom("Portainer", "../local_resources/portainer.png")
     ingress >> runner >> Edge(label="webhook") \
       >> portainer >> [Docker("S01"),
                       Docker("S02"),
