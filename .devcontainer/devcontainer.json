@@ -1,0 +1,9 @@
+{
+  "name": "Diagram devContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "extensions": [
+    "ms-python.python"
+  ]
+}
