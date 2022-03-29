@@ -14,8 +14,8 @@ from diagrams.onprem.iac import Terraform
 
 with Diagram(name="DevOps Initial Process", filename="devops_init", show=False):
   actions = Github("GitHub Actions")
-  terraform = Custom("Terraform", "./local_resources/terraform.png")
-  packer = Custom("Packer", "./local_resources/packer.png")
+  terraform = Custom("Terraform", "../local_resources/terraform.png")
+  packer = Custom("Packer", "../local_resources/packer.png")
   pc = Server("Local Workstation")
 
   with Cluster("Servers"):
