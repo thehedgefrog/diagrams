@@ -18,6 +18,6 @@ with Diagram(name="DevOps Ongoing Process", filename="devops_ongoing", show=Fals
   with Cluster("Docker"):
     portainer = Custom("Portainer", "../local_resources/portainer.png")
     ingress >> runner >> Edge(label="webhook") \
-      >> portainer >> [Docker("S01"),
+      >> portainer >> [Docker("S03"),
                       Docker("S02"),
-                      Docker("S03")]
+                      Docker("S01")]

@@ -39,6 +39,6 @@ with Diagram(name="DevOps Initial Process", filename="devops_init", show=False):
 
     with Cluster("Docker"):
       runner >> ansible
-      ansible >> [Docker("S01"),
+      ansible >> [Docker("S03"),
                   Docker("S02"),
-                  Docker("S03")]
+                  Docker("S01")]
